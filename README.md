@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Calculator
+# Calculator App
 
 A calculator app where you can calculate the 4 basic Math operations for a company called Math Magicians.
 
@@ -19,7 +19,7 @@ To get a local copy up and running follow these simple example steps.
 - `git clone git@github.com:SamArsanios/calculator-app.git`
 - `cd calculator`
 - `npm install`
-- `npm run start`
+- `npm start`
 
 <!-- To test the logic files
 
