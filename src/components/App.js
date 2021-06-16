@@ -4,9 +4,11 @@ import ButtonPanel from './ButtonPanel';
 
 export default function App() {
   return (
-    <div className="App">
-      <Display />
-      <ButtonPanel />
-    </div>
+    <>
+      <div className="App">
+        <Display />
+        <ButtonPanel />
+      </div>
+    </>
   );
 }
