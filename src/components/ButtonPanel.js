@@ -1,8 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Button from './Button';
 
-export default ButtonPanel = () => {
+export default function ButtonPanel() {
   return (
     <div className="button-panel">
       <div className="buttons">
