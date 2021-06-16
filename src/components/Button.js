@@ -1,19 +1,19 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-export default Button = (props) => {
-    const { buttonName } = props
-    return (
-        <div className="btn">
-            {buttonName}
-        </div>
-    );
+export default function Button(props) {
+  const { buttonName } = props;
+  return (
+    <div className="btn">
+      {buttonName}
+    </div>
+  );
 }
 
-Button.PropTypes = {
-    buttonName: PropTypes.string
-}
+Button.propTypes = {
+  buttonName: PropTypes.string,
+};
 
 Button.defaultProps = {
-    buttonName: ''
-}
+  buttonName: '',
+};
