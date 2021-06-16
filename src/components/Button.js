@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-export default function Button(props) {
+export default Button = (props) => {
     const { buttonName } = props
     return (
         <div className="btn">
