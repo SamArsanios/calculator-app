@@ -2,18 +2,26 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default function Button(props) {
-  const { buttonName } = props;
+  const { name, clickHandler } = props;
+  const handleClick = (button) => clickHandler(button);
   return (
-    <div className="btn">
-      {buttonName}
+    <div className="button">
+      <button
+        className={name}
+        type="button"
+        onClick={handleClick.bind(this, name)}
+      >
+        {name}
+      </button>
     </div>
   );
 }
 
 Button.propTypes = {
-  buttonName: PropTypes.string,
+  name: PropTypes.string,
+  clickHandler: PropTypes.func.isRequired,
 };
 
 Button.defaultProps = {
-  buttonName: '',
+  name: '',
 };
