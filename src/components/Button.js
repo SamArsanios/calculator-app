@@ -5,15 +5,13 @@ export default function Button(props) {
   const { name, clickHandler } = props;
   const handleClick = (button) => clickHandler(button);
   return (
-    <div className="button">
-      <button
-        className={name}
-        type="button"
-        onClick={handleClick.bind(this, name)}
-      >
-        {name}
-      </button>
-    </div>
+    <button
+      className="button"
+      type="button"
+      onClick={handleClick.bind(this, name)}
+    >
+      {name}
+    </button>
   );
 }
 
