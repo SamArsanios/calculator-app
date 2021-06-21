@@ -25,6 +25,7 @@ body {
   width: 25%;
   cursor: pointer;
   font-size: 50px;
+  border: 1px solid #aaa;
 }
 
 .button-panel {
@@ -53,7 +54,7 @@ body {
 .display {
   width: 680px;
   height: 100px;
-  background-color: gray;
+  background-color: #a9a9a6;
   color: white;
   font-weight: bold;
   font-size: 70px;
