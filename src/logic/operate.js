@@ -1,7 +1,7 @@
 import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
-  let result = 0
+  let result = 0;
   let firstNum;
   let secondNum;
   if (numberTwo === '') return numberOne;
@@ -12,10 +12,10 @@ const operate = (numberOne, numberTwo, operation) => {
   }
 
   try {
-    firstNum = Big(numberOne)
-    secondNum = Big(numberTwo)
+    firstNum = Big(numberOne);
+    secondNum = Big(numberTwo);
   } catch (error) {
-    return 'Error'
+    return 'Error';
   }
 
   switch (operation) {
@@ -29,7 +29,7 @@ const operate = (numberOne, numberTwo, operation) => {
       result = firstNum.times(secondNum);
       break;
     case '÷':
-      result = firstNum.div(secondNum)
+      result = firstNum.div(secondNum);
       break;
     case '%':
       result = firstNum.div(100).times(numberTwo);
