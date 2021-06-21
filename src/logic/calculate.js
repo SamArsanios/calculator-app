@@ -1,4 +1,6 @@
-const calculate = () => {
+const calculate = (data, button) => {
+    let {total, next, operation} = data
+    
 
 };
 
