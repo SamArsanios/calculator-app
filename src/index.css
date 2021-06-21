@@ -24,6 +24,7 @@ body {
 .button {
   width: 25%;
   cursor: pointer;
+  font-size: 50px;
 }
 
 .button-panel {
@@ -38,11 +39,20 @@ body {
 }
 
 .grey {
-  background-color: rgb(240, 226, 226);
+  background-color: whitesmoke;
+}
+
+.width {
+  width: 50%;
+}
+
+.orange {
+  background-color: orange;
 }
 
 .display {
-  width: 700px;
+  width: 680px;
+  height: 100px;
   background-color: gray;
   color: white;
   font-weight: bold;
