@@ -5,32 +5,32 @@ export default function ButtonPanel() {
   return (
     <div className="button-panel">
       <div className="buttons">
-        <Button buttonName="AC" />
-        <Button buttonName="+/-" />
-        <Button buttonName="%" />
+        <Button color="grey" buttonName="AC" />
+        <Button color="grey" buttonName="+/-" />
+        <Button color="grey" buttonName="%" />
         <Button buttonName="÷" />
       </div>
       <div className="buttons">
-        <Button buttonName="7" />
-        <Button buttonName="8" />
-        <Button buttonName="9" />
+        <Button color="grey" buttonName="7" />
+        <Button color="grey" buttonName="8" />
+        <Button color="grey" buttonName="9" />
         <Button buttonName="X" />
       </div>
       <div className="buttons">
-        <Button buttonName="4" />
-        <Button buttonName="5" />
-        <Button buttonName="6" />
+        <Button color="grey" buttonName="4" />
+        <Button color="grey" buttonName="5" />
+        <Button color="grey" buttonName="6" />
         <Button buttonName="-" />
       </div>
       <div className="buttons">
-        <Button buttonName="1" />
-        <Button buttonName="2" />
-        <Button buttonName="3" />
+        <Button color="grey" buttonName="1" />
+        <Button color="grey" buttonName="2" />
+        <Button color="grey" buttonName="3" />
         <Button buttonName="+" />
       </div>
       <div className="buttons">
-        <Button buttonName="0" />
-        <Button buttonName="." />
+        <Button color="grey" buttonName="0" />
+        <Button color="grey" buttonName="." />
         <Button buttonName="=" />
       </div>
     </div>
