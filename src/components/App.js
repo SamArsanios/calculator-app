@@ -15,7 +15,7 @@ const App = () => {
     setData(result);
   };
 
-  let { total, next, operation } = data; // eslint-disable-line
+  const { total, next, operation } = data; 
 
   return (
     <>
