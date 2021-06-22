@@ -15,10 +15,12 @@ export default function App() {
     setData(result);
   };
 
+  let { total, next, operation } = data;
+
   return (
     <>
       <div className="App">
-        <Display />
+        <Display result={`${total} ${operation} ${next}`} />
         <ButtonPanel clickHandler={handleClick} />
       </div>
     </>
