@@ -15,7 +15,7 @@ const App = () => {
     setData(result);
   };
 
-  const { total, next, operation } = data; 
+  const { total, next, operation } = data;
 
   return (
     <>
