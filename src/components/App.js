@@ -3,7 +3,7 @@ import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
 
-export default function App() {
+const App = () => {
   const [data, setData] = useState({
     total: '0',
     next: '',
@@ -15,12 +15,14 @@ export default function App() {
     setData(result);
   };
 
+  let { total, next, operation } = data; // eslint-disable-line
+
   return (
     <>
-      <div className="App">
-        <Display />
-        <ButtonPanel clickHandler={handleClick} />
-      </div>
+      <Display result={`${total} ${operation} ${next}`} />
+      <ButtonPanel clickHandler={handleClick} />
     </>
   );
-}
+};
+
+export default App;

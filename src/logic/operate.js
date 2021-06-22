@@ -29,7 +29,13 @@ const operate = (numberOne, numberTwo, operation) => {
       result = firstNum.times(secondNum);
       break;
     case '÷':
-      result = firstNum.div(secondNum);
+      if (String(secondNum) === '0') {
+        if (firstNum > 0) result = 'Division Error';
+        if (firstNum < 0) result = '-Division Error';
+      } else {
+        result = firstNum.div(secondNum);
+      }
+
       break;
     case '%':
       result = firstNum.div(100);
