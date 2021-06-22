@@ -56,7 +56,7 @@ const calculate = (data, button) => {
     case '=':
       total = operate(total, next, operation);
       next = '';
-      operation = '=';
+      operation = '';
       break;
     case 'AC':
       total = '0';
