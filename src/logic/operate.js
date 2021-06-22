@@ -32,7 +32,7 @@ const operate = (numberOne, numberTwo, operation) => {
       result = firstNum.div(secondNum);
       break;
     case '%':
-      result = firstNum.div(100).times(numberTwo);
+      result = firstNum.div(100);
       break;
     case '+/-':
       result = firstNum.times(-1);
