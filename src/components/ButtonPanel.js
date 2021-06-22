@@ -19,7 +19,7 @@ const ButtonPanel = (props) => {
         <Button color="grey" name="7" clickHandler={handleClick} />
         <Button color="grey" name="8" clickHandler={handleClick} />
         <Button color="grey" name="9" clickHandler={handleClick} />
-        <Button name="X" clickHandler={handleClick} />
+        <Button name="*" clickHandler={handleClick} />
       </div>
       <div className="buttons">
         <Button color="grey" name="4" clickHandler={handleClick} />
