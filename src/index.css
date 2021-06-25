@@ -65,3 +65,18 @@ body {
   margin-right: auto;
   margin-top: 50px;
 }
+
+.content {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.m-left {
+  margin-left: 10px;
+}
+
+.p-left {
+  padding-left: 10px;
+}
