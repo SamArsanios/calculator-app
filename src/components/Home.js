@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const Home = () => {
   <div>
     <h1 className="">Welcome to Our Page!</h1>
