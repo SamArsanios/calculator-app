@@ -5,13 +5,13 @@ import Home from './Home';
 import Quote from './Quote';
 
 const Routes = () => {
-    <BrowserRouter>
-        <Switch>
-            <Route path="/" component={Home} exact />
-            <Route path="/calc" component={App} />
-            <Route path="/quote" component={Quote} />
-        </Switch>
-    </BrowserRouter>
-}
+  <BrowserRouter>
+    <Switch>
+      <Route path="/" component={Home} exact />
+      <Route path="/calc" component={App} />
+      <Route path="/quote" component={Quote} />
+    </Switch>
+  </BrowserRouter>;
+};
 
 export default Routes;
