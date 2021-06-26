@@ -4,14 +4,14 @@ import App from './App';
 import Home from './Home';
 import Quote from './Quote';
 
-const Routes = () => {
+const Routes = () => (
   <BrowserRouter>
     <Switch>
       <Route path="/" component={Home} exact />
       <Route path="/calc" component={App} />
       <Route path="/quote" component={Quote} />
     </Switch>
-  </BrowserRouter>;
-};
+  </BrowserRouter>
+);
 
 export default Routes;

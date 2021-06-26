@@ -1,7 +1,7 @@
 import React from 'react';
 import LinkTo from './LinkTo';
 
-const NavBar = () => {
+const NavBar = () => (
   <nav className="">
     <h1>Math Magicians</h1>
     <div>
@@ -9,7 +9,7 @@ const NavBar = () => {
       <LinkTo name="Calc" path="/calc" />
       <LinkTo name="Quote" path="/quote" />
     </div>
-  </nav>;
-};
+  </nav>
+);
 
 export default NavBar;
