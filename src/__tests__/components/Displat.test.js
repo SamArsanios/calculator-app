@@ -1,13 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import ButtonPanel from '../../components/ButtonPanel';
+import Display from '../../components/Display';
 
-const testing = () => { };
-
-describe('ButtonPanel', () => {
+describe('Display', () => {
   it('renders correctly', () => {
     const tree = renderer
-      .create(<ButtonPanel name="1" clickHandler={testing} />)
+      .create(<Display />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
