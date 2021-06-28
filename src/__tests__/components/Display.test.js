@@ -2,7 +2,6 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import Display from '../../components/Display';
 import { render } from '@testing-library/react';
-import '@testing-library/jest-dom';
 
 describe('Display', () => {
   it('renders correctly', () => {
