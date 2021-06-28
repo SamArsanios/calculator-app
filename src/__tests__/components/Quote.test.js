@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import LinkTo from '../../components/LinkTo';
+import Quote from '../../components/Quote';
 
-describe('LinkTo', () => {
+describe('Quote', () => {
   it('renders correctly', () => {
     const tree = renderer
-      .create(<LinkTo />)
+      .create(<Quote />)
       .toJSON()
     expect(tree).toMatchSnapshot();
   });
