@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LinkTo renders correctly 1`] = `
+<a
+  className="m-left p-left"
+/>
+`;
