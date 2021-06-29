@@ -5,7 +5,7 @@ import LinkTo from '../../components/LinkTo';
 describe('LinkTo', () => {
   it('renders correctly', () => {
     const tree = renderer
-      .create(<LinkTo />)
+      .create(<LinkTo path="/" name="app" />)
       .toJSON()
     expect(tree).toMatchSnapshot();
   });
