@@ -18,7 +18,7 @@ describe('operate', () => {
     const value = operate(20, 2, '÷');
     expect(value).toStrictEqual(Big(10));
   });
-  it('changes a number to percentage', () => {
+  it('divides a number by 100 and changes a number to percentage', () => {
     const value = operate(20, 1, '%');
     expect(value).toStrictEqual(Big(0.2));
   });

@@ -1,7 +1,31 @@
 import Big from 'big.js';
+import userEvent from '@testing-library/user-event';
+import { render, screen } from '@testing-library/react';
+import regeneratorRuntime from 'regenerator-runtime';
 import calculate from '../../logic/calculate';
+import App from '../../components/App';
 
 describe('calculate', () => {
+  beforeEach(() => {
+    render(<App />);
+  });
+  it('Clears the display', async () => {
+    await userEvent.click(screen.getByText('2'));
+    await userEvent.click(screen.getByText('0'));
+    await userEvent.click(screen.getByText('AC'));
+    expect(screen.queryByText('20')).toBeNull();
+  });
+  it('Adds two numbers - negative scenario', async () => {
+    await userEvent.click(screen.getByText('1'));
+    await userEvent.click(screen.getByText('0'));
+    await userEvent.click(screen.getByText('0'));
+    await userEvent.click(screen.getByText('+'));
+    await userEvent.click(screen.getByText('2'));
+    await userEvent.click(screen.getByText('0'));
+    await userEvent.click(screen.getByText('0'));
+    await userEvent.click(screen.getByText('='));
+    expect(screen.queryByText('30')).toBeNull();
+  });
   it('builds the total numbers as type happens', () => {
     let value = { total: '', next: '', operation: '' };
     value = calculate(value, '5');
