@@ -1,7 +1,7 @@
 import Big from 'big.js';
 import userEvent from '@testing-library/user-event';
 import { render, screen } from '@testing-library/react';
-import regeneratorRuntime from 'regenerator-runtime';
+// import regeneratorRuntime from 'regenerator-runtime';
 import calculate from '../../logic/calculate';
 import App from '../../components/App';
 
