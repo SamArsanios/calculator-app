@@ -48,8 +48,8 @@ describe('calculate', () => {
     expect(value.total).toStrictEqual(Big(-49));
   });
   it('returns Error if there is an operation in place but not a next value', () => {
-    let data = { total: '20', next: '', operation: '+' };
-    data = calculate(data, '*');
-    expect(data.next).toBe('Error');
+    let value = { total: '20', next: '', operation: '+' };
+    value = calculate(value, '+/-');
+    expect(value.next).toBe('Error');
   });
 });
