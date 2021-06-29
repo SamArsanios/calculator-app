@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Display from '../../components/Display';
 import { render } from '@testing-library/react';
+import Display from '../../components/Display';
 
 describe('Display', () => {
   it('renders correctly', () => {
@@ -19,5 +19,5 @@ describe('Display', () => {
     const { container } = render(<Display />);
     const show = container.querySelector('div');
     expect(show).toHaveTextContent('0');
-  })
+  });
 });

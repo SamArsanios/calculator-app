@@ -8,5 +8,5 @@ describe('Home', () => {
       .create(<Home />)
       .toJSON();
     expect(tree).toMatchSnapshot();
-  })
+  });
 });

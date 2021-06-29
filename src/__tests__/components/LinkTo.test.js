@@ -6,7 +6,7 @@ describe('LinkTo', () => {
   it('renders correctly', () => {
     const tree = renderer
       .create(<LinkTo path="/" name="app" />)
-      .toJSON()
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

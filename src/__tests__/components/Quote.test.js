@@ -6,7 +6,7 @@ describe('Quote', () => {
   it('renders correctly', () => {
     const tree = renderer
       .create(<Quote />)
-      .toJSON()
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

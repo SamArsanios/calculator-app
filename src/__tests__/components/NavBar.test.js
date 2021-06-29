@@ -6,7 +6,7 @@ describe('NavBar', () => {
   it('renders correctly', () => {
     const tree = renderer
       .create(<NavBar />)
-      .toJSON()
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

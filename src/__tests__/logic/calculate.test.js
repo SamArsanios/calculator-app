@@ -52,4 +52,4 @@ describe('calculate', () => {
     data = calculate(data, '*');
     expect(data.next).toBe('Error');
   });
-})
+});
