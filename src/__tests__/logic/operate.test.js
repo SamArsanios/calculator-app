@@ -10,6 +10,10 @@ describe('operate', () => {
     const value = operate(20, 2, '-');
     expect(value).toStrictEqual(Big(18));
   });
+  it('subtracts two numbers and returns the negative value', () => {
+    const value = operate(10, 99, '-');
+    expect(value).toStrictEqual(Big(-89));
+  });
   it('multiplies 2 numbers and returns a value', () => {
     const value = operate(20, 2, '*');
     expect(value).toStrictEqual(Big(40));
