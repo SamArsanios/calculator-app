@@ -18,6 +18,10 @@ describe('operate', () => {
     const value = operate(20, 2, '÷');
     expect(value).toStrictEqual(Big(10));
   });
+  it('divides 2 numbers and returns a decimal value', () => {
+    const value = operate(20, 8, '÷');
+    expect(value).toStrictEqual(Big(2.5));
+  });
   it('divides a number by 100 and changes a number to percentage', () => {
     const value = operate(20, 1, '%');
     expect(value).toStrictEqual(Big(0.2));
