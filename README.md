@@ -21,9 +21,9 @@ To get a local copy up and running follow these simple example steps.
 - `npm install`
 - `npm start`
 
-<!-- To test the logic files
+To test the logic files
 
-- `npm run test` -->
+- `npm test`
 
 ## Author
 
