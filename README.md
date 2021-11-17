@@ -2,7 +2,7 @@
 
 # Calculator App
 
-A calculator app where you can calculate the 4 basic Math operations for a company called Math Magicians.
+A calculator app where you can calculate the four basic Math operations for a company called Math Magicians.
 
 <!-- ![](./docs/screenshot.png) -->
 
